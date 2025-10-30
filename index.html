@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxury Vancouver Real Estate | Premier Property Specialist</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <style>
         /* Reset and Base Styles */
         * {
@@ -13,7 +16,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         :root {
             --primary: #0D2F4F;
             --secondary: #B8860B;
@@ -22,11 +25,11 @@
             --dark: #212529;
             --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
-        
+
         html {
             scroll-behavior: smooth;
         }
-        
+
         body {
             font-family: 'Montserrat', sans-serif;
             line-height: 1.6;
@@ -34,14 +37,17 @@
             overflow-x: hidden;
             background-color: var(--light);
         }
-        
-        h1, h2, h3, h4 {
+
+        h1,
+        h2,
+        h3,
+        h4 {
             font-family: 'Playfair Display', serif;
             font-weight: 700;
             margin-bottom: 1.5rem;
             color: var(--primary);
         }
-        
+
         section {
             padding: 8rem 2rem;
             min-height: 100vh;
@@ -49,13 +55,13 @@
             flex-direction: column;
             justify-content: center;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             width: 100%;
         }
-        
+
         .btn {
             display: inline-block;
             padding: 1.2rem 2.5rem;
@@ -72,24 +78,24 @@
             font-size: 0.9rem;
             box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3);
         }
-        
+
         .btn:hover {
             background: #9c7109;
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
-        
+
         .section-title {
             text-align: center;
             margin-bottom: 5rem;
             position: relative;
         }
-        
+
         .section-title h2 {
             font-size: 2.8rem;
             display: inline-block;
         }
-        
+
         .section-title:after {
             content: '';
             display: block;
@@ -99,7 +105,7 @@
             margin: 1.5rem auto;
             border-radius: 2px;
         }
-        
+
         /* Navigation */
         .nav-container {
             position: fixed;
@@ -111,12 +117,12 @@
             backdrop-filter: blur(10px);
             background: rgba(13, 47, 79, 0.9);
         }
-        
+
         .nav-container.scrolled {
             background: rgba(13, 47, 79, 0.98);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         }
-        
+
         nav {
             display: flex;
             justify-content: space-between;
@@ -125,7 +131,7 @@
             max-width: 1200px;
             margin: 0 auto;
         }
-        
+
         .logo {
             font-family: 'Playfair Display', serif;
             font-size: 2rem;
@@ -135,26 +141,26 @@
             display: flex;
             align-items: center;
         }
-        
+
         .logo span {
             color: var(--secondary);
             margin-left: 0.2rem;
         }
-        
+
         .logo i {
             margin-right: 0.5rem;
             font-size: 1.8rem;
         }
-        
+
         .nav-links {
             display: flex;
             list-style: none;
         }
-        
+
         .nav-links li {
             margin-left: 2.5rem;
         }
-        
+
         .nav-links a {
             color: white;
             text-decoration: none;
@@ -163,7 +169,7 @@
             font-size: 1.1rem;
             position: relative;
         }
-        
+
         .nav-links a:after {
             content: '';
             position: absolute;
@@ -174,15 +180,15 @@
             left: 0;
             transition: var(--transition);
         }
-        
+
         .nav-links a:hover {
             color: var(--secondary);
         }
-        
+
         .nav-links a:hover:after {
             width: 100%;
         }
-        
+
         /* Hero Section */
         #hero {
             background: linear-gradient(rgba(13, 47, 79, 0.8), rgba(13, 47, 79, 0.8)), url('https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
@@ -191,7 +197,7 @@
             position: relative;
             padding: 12rem 2rem;
         }
-        
+
         .hero-content {
             max-width: 900px;
             margin: 0 auto;
@@ -199,15 +205,15 @@
             transform: translateY(30px);
             animation: fadeUp 1s ease forwards 0.5s;
         }
-        
+
         .hero-content h1 {
             font-size: 4rem;
             margin-bottom: 1.5rem;
             line-height: 1.2;
             color: white;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         }
-        
+
         .hero-content p {
             font-size: 1.4rem;
             margin-bottom: 3rem;
@@ -217,60 +223,60 @@
             font-weight: 300;
             line-height: 1.8;
         }
-        
+
         .hero-buttons {
             display: flex;
             justify-content: center;
             gap: 1.5rem;
             margin-top: 2rem;
         }
-        
+
         .btn-secondary {
             background: transparent;
             border: 2px solid white;
             color: white;
         }
-        
+
         .btn-secondary:hover {
             background: white;
             color: var(--primary);
         }
-        
+
         /* Services Section */
         #services {
             background: var(--light);
             position: relative;
         }
-        
+
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2.5rem;
         }
-        
+
         .service-card {
             background: white;
             padding: 3rem 2rem;
             border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             transition: var(--transition);
             opacity: 0;
             transform: translateY(40px);
             text-align: center;
             border-bottom: 4px solid transparent;
         }
-        
+
         .service-card:hover {
             transform: translateY(-15px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
             border-bottom: 4px solid var(--secondary);
         }
-        
+
         .service-card.visible {
             opacity: 1;
             transform: translateY(0);
         }
-        
+
         .service-icon {
             font-size: 3.5rem;
             color: var(--secondary);
@@ -285,37 +291,37 @@
             margin: 0 auto 1.5rem;
             transition: var(--transition);
         }
-        
+
         .service-card:hover .service-icon {
             background: var(--secondary);
             color: white;
             transform: rotateY(180deg);
         }
-        
+
         .service-card h3 {
             font-size: 1.6rem;
             margin-bottom: 1.2rem;
         }
-        
+
         .service-card p {
             color: #666;
             line-height: 1.8;
         }
-        
+
         /* About Section */
         #about {
             background: linear-gradient(to right, white 50%, var(--light) 50%);
             position: relative;
             overflow: hidden;
         }
-        
+
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 5rem;
             align-items: center;
         }
-        
+
         .about-image {
             position: relative;
             opacity: 0;
@@ -323,23 +329,23 @@
             transition: all 1s ease;
             z-index: 2;
         }
-        
+
         .about-image.visible {
             opacity: 1;
             transform: translateX(0);
         }
-        
+
         .about-image img {
             width: 100%;
             border-radius: 12px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
             transition: var(--transition);
         }
-        
+
         .about-image:hover img {
             transform: scale(1.03);
         }
-        
+
         .about-image:before {
             content: '';
             position: absolute;
@@ -352,50 +358,50 @@
             z-index: -1;
             transition: var(--transition);
         }
-        
+
         .about-image:hover:before {
             top: -20px;
             left: -20px;
         }
-        
+
         .about-text {
             opacity: 0;
             transform: translateX(50px);
             transition: all 1s ease;
         }
-        
+
         .about-text.visible {
             opacity: 1;
             transform: translateX(0);
         }
-        
+
         .about-text h2 {
             margin-bottom: 2rem;
             font-size: 2.5rem;
             color: var(--primary);
         }
-        
+
         .about-text p {
             margin-bottom: 1.8rem;
             line-height: 1.8;
             color: #555;
         }
-        
+
         .about-stats {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 1.5rem;
             margin: 2.5rem 0;
         }
-        
+
         .stat {
             text-align: center;
             padding: 1.5rem;
             background: white;
             border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         }
-        
+
         .stat-number {
             font-size: 2.5rem;
             font-weight: 700;
@@ -403,43 +409,43 @@
             margin-bottom: 0.5rem;
             font-family: 'Montserrat', sans-serif;
         }
-        
+
         .stat-text {
             font-size: 0.9rem;
             color: #666;
             font-weight: 500;
         }
-        
+
         /* Contact Section */
         #contact {
             background: linear-gradient(rgba(13, 47, 79, 0.9), rgba(13, 47, 79, 0.9)), url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
             color: white;
             position: relative;
         }
-        
+
         .contact-wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 5rem;
         }
-        
+
         .contact-info {
             opacity: 0;
             transform: translateX(-50px);
             transition: all 1s ease;
         }
-        
+
         .contact-info.visible {
             opacity: 1;
             transform: translateX(0);
         }
-        
+
         .contact-info h3 {
             font-size: 2.2rem;
             margin-bottom: 2.5rem;
             color: white;
         }
-        
+
         .contact-detail {
             display: flex;
             align-items: center;
@@ -449,12 +455,12 @@
             border-radius: 8px;
             transition: var(--transition);
         }
-        
+
         .contact-detail:hover {
             background: rgba(255, 255, 255, 0.15);
             transform: translateX(10px);
         }
-        
+
         .contact-icon {
             font-size: 1.8rem;
             color: var(--secondary);
@@ -467,11 +473,11 @@
             justify-content: center;
             border-radius: 50%;
         }
-        
+
         .contact-text {
             font-size: 1.1rem;
         }
-        
+
         .contact-form {
             opacity: 0;
             transform: translateX(50px);
@@ -479,31 +485,31 @@
             background: white;
             padding: 3rem;
             border-radius: 12px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
         }
-        
+
         .contact-form.visible {
             opacity: 1;
             transform: translateX(0);
         }
-        
+
         .contact-form h3 {
             color: var(--primary);
             text-align: center;
             margin-bottom: 2.5rem;
         }
-        
+
         .form-group {
             margin-bottom: 1.8rem;
         }
-        
+
         .form-group label {
             display: block;
             margin-bottom: 0.8rem;
             color: var(--primary);
             font-weight: 500;
         }
-        
+
         .form-group input,
         .form-group textarea {
             width: 100%;
@@ -513,26 +519,26 @@
             font-family: 'Montserrat', sans-serif;
             transition: var(--transition);
         }
-        
+
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
             border-color: var(--secondary);
             box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.2);
         }
-        
+
         .form-group textarea {
             min-height: 180px;
             resize: vertical;
         }
-        
+
         /* Footer */
         footer {
             background: #0a1f32;
             color: white;
             padding: 4rem 2rem 2rem;
         }
-        
+
         .footer-content {
             max-width: 1200px;
             margin: 0 auto;
@@ -540,7 +546,7 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 3rem;
         }
-        
+
         .footer-logo {
             font-family: 'Playfair Display', serif;
             font-size: 2.2rem;
@@ -548,22 +554,22 @@
             color: white;
             margin-bottom: 1.5rem;
         }
-        
+
         .footer-logo span {
             color: var(--secondary);
         }
-        
+
         .footer-about p {
             margin-bottom: 1.5rem;
             line-height: 1.8;
             color: #ccc;
         }
-        
+
         .social-links {
             display: flex;
             gap: 1rem;
         }
-        
+
         .social-links a {
             display: flex;
             align-items: center;
@@ -575,12 +581,12 @@
             border-radius: 50%;
             transition: var(--transition);
         }
-        
+
         .social-links a:hover {
             background: var(--secondary);
             transform: translateY(-5px);
         }
-        
+
         .footer-heading {
             font-size: 1.3rem;
             margin-bottom: 1.8rem;
@@ -588,7 +594,7 @@
             position: relative;
             padding-bottom: 0.8rem;
         }
-        
+
         .footer-heading:after {
             content: '';
             position: absolute;
@@ -598,15 +604,15 @@
             height: 3px;
             background: var(--secondary);
         }
-        
+
         .footer-links {
             list-style: none;
         }
-        
+
         .footer-links li {
             margin-bottom: 1rem;
         }
-        
+
         .footer-links a {
             color: #ccc;
             text-decoration: none;
@@ -614,18 +620,18 @@
             display: flex;
             align-items: center;
         }
-        
+
         .footer-links a i {
             margin-right: 0.8rem;
             color: var(--secondary);
             font-size: 0.8rem;
         }
-        
+
         .footer-links a:hover {
             color: var(--secondary);
             transform: translateX(5px);
         }
-        
+
         .copyright {
             text-align: center;
             margin-top: 4rem;
@@ -634,80 +640,83 @@
             color: #999;
             font-size: 0.9rem;
         }
-        
+
         /* Animations */
         @keyframes fadeUp {
             from {
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         /* Responsive Design */
         @media (max-width: 992px) {
+
             .about-content,
             .contact-wrapper {
                 grid-template-columns: 1fr;
             }
-            
+
             .about-image {
                 margin-bottom: 4rem;
             }
-            
+
             .hero-content h1 {
                 font-size: 3.2rem;
             }
-            
+
             #about {
                 background: white;
             }
         }
-        
+
         @media (max-width: 768px) {
             section {
                 padding: 6rem 1.5rem;
             }
-            
+
             .nav-links {
                 display: none;
             }
-            
+
             .hero-content h1 {
                 font-size: 2.5rem;
             }
-            
+
             .hero-content p {
                 font-size: 1.2rem;
             }
-            
+
             .services-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .hero-buttons {
                 flex-direction: column;
                 gap: 1rem;
             }
-            
+
             .btn {
                 width: 100%;
                 text-align: center;
             }
-            
+
             .about-stats {
                 grid-template-columns: 1fr;
             }
-            
+
             .footer-content {
                 grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <div class="nav-container">
@@ -727,7 +736,8 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Discover Luxury Living in Beautiful Vancouver</h1>
-                <p>Premier real estate services for discerning buyers and sellers in one of the world's most desirable cities</p>
+                <p>Premier real estate services for discerning buyers and sellers in one of the world's most desirable
+                    cities</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn">Connect With Me Today</a>
                     <a href="#services" class="btn btn-secondary">View My Services</a>
@@ -740,38 +750,49 @@
     <section id="services">
         <div class="container">
             <div class="section-title">
+                <h2>My Properties</h2>
+                <div data-widget="listing-widget" data-props='{ "id": 1 }'></div>
+                <script src="http://localhost:3000/widget.js"></script>
+            </div>
+            <div class="section-title">
                 <h2>My Premium Services</h2>
             </div>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-home"></i></div>
                     <h3>Luxury Home Buying</h3>
-                    <p>Expert guidance through the entire home buying process, from search to closing. I'll help you find the perfect property that meets all your criteria.</p>
+                    <p>Expert guidance through the entire home buying process, from search to closing. I'll help you
+                        find the perfect property that meets all your criteria.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-dollar-sign"></i></div>
                     <h3>Home Selling</h3>
-                    <p>Maximize your property's value with professional staging, marketing, and negotiation strategies tailored to Vancouver's competitive market.</p>
+                    <p>Maximize your property's value with professional staging, marketing, and negotiation strategies
+                        tailored to Vancouver's competitive market.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-chart-line"></i></div>
                     <h3>Market Analysis</h3>
-                    <p>Detailed comparative market analysis to ensure you make informed decisions whether buying or selling in the Vancouver real estate market.</p>
+                    <p>Detailed comparative market analysis to ensure you make informed decisions whether buying or
+                        selling in the Vancouver real estate market.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-handshake"></i></div>
                     <h3>Negotiation</h3>
-                    <p>Skilled negotiation techniques that get results while maintaining positive relationships with all parties involved in the transaction.</p>
+                    <p>Skilled negotiation techniques that get results while maintaining positive relationships with all
+                        parties involved in the transaction.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-file-contract"></i></div>
                     <h3>Paperwork Handling</h3>
-                    <p>Thorough management of all documentation and contracts to ensure a smooth, stress-free transaction process from start to finish.</p>
+                    <p>Thorough management of all documentation and contracts to ensure a smooth, stress-free
+                        transaction process from start to finish.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-clipboard-list"></i></div>
                     <h3>Property Management</h3>
-                    <p>Complete property management services for investment properties, including tenant screening, maintenance, and financial reporting.</p>
+                    <p>Complete property management services for investment properties, including tenant screening,
+                        maintenance, and financial reporting.</p>
                 </div>
             </div>
         </div>
@@ -785,13 +806,19 @@
             </div>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Vancouver Real Estate Agent">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                        alt="Vancouver Real Estate Agent">
                 </div>
                 <div class="about-text">
                     <h2>Michael Roberts</h2>
-                    <p>With over 15 years of experience in Vancouver's dynamic real estate market, I bring extensive knowledge, professionalism, and dedication to every client relationship. My deep understanding of neighborhood trends, property values, and market dynamics ensures you receive expert guidance.</p>
-                    <p>As a lifelong Vancouver resident, I'm passionate about this beautiful city and helping people find their perfect home here. I take pride in building lasting relationships with my clients, many of whom have become close friends over the years.</p>
-                    
+                    <p>With over 15 years of experience in Vancouver's dynamic real estate market, I bring extensive
+                        knowledge, professionalism, and dedication to every client relationship. My deep understanding
+                        of neighborhood trends, property values, and market dynamics ensures you receive expert
+                        guidance.</p>
+                    <p>As a lifelong Vancouver resident, I'm passionate about this beautiful city and helping people
+                        find their perfect home here. I take pride in building lasting relationships with my clients,
+                        many of whom have become close friends over the years.</p>
+
                     <div class="about-stats">
                         <div class="stat">
                             <div class="stat-number">15+</div>
@@ -806,8 +833,10 @@
                             <div class="stat-text">Property Sold</div>
                         </div>
                     </div>
-                    
-                    <p>My approach is personalized, transparent, and always focused on achieving your real estate goals. Whether you're buying your first condo, upgrading to a family home, or investing in property, I'll be with you every step of the way.</p>
+
+                    <p>My approach is personalized, transparent, and always focused on achieving your real estate goals.
+                        Whether you're buying your first condo, upgrading to a family home, or investing in property,
+                        I'll be with you every step of the way.</p>
                     <a href="#contact" class="btn">Schedule a Consultation</a>
                 </div>
             </div>
@@ -839,7 +868,8 @@
                         <div class="contact-icon"><i class="fas fa-clock"></i></div>
                         <div class="contact-text">Available Monday - Saturday, 9AM - 6PM</div>
                     </div>
-                    <p class="mt-4">I'm committed to responding to all inquiries within 24 hours. Feel free to reach out with any questions about Vancouver real estate!</p>
+                    <p class="mt-4">I'm committed to responding to all inquiries within 24 hours. Feel free to reach out
+                        with any questions about Vancouver real estate!</p>
                 </div>
                 <div class="contact-form">
                     <h3>Send a Message</h3>
@@ -872,7 +902,8 @@
         <div class="footer-content">
             <div class="footer-about">
                 <div class="footer-logo">Metro<span>Vancouver</span>Estates</div>
-                <p>Providing exceptional real estate services in Vancouver and the surrounding areas for over 15 years.</p>
+                <p>Providing exceptional real estate services in Vancouver and the surrounding areas for over 15 years.
+                </p>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -906,43 +937,44 @@
 
     <script>
         // Scroll animations
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const nav = document.querySelector('.nav-container');
             const serviceCards = document.querySelectorAll('.service-card');
             const aboutImage = document.querySelector('.about-image');
             const aboutText = document.querySelector('.about-text');
             const contactInfo = document.querySelector('.contact-info');
             const contactForm = document.querySelector('.contact-form');
-            
+
             // Nav background on scroll
-            window.addEventListener('scroll', function() {
+            window.addEventListener('scroll', function () {
                 if (window.scrollY > 100) {
                     nav.classList.add('scrolled');
                 } else {
                     nav.classList.remove('scrolled');
                 }
-                
+
                 // Animate elements on scroll
                 animateOnScroll(serviceCards, 'visible');
                 animateOnScroll([aboutImage, aboutText], 'visible');
                 animateOnScroll([contactInfo, contactForm], 'visible');
             });
-            
+
             // Initial trigger
             window.dispatchEvent(new Event('scroll'));
-            
+
             function animateOnScroll(elements, className) {
                 elements.forEach(element => {
                     const position = element.getBoundingClientRect();
-                    
+
                     // If element is in viewport
-                    if(position.top < window.innerHeight - 100) {
+                    if (position.top < window.innerHeight - 100) {
                         element.classList.add(className);
                     }
                 });
             }
         });
     </script>
-	<script src="https://real-mate.vercel.app/js/chatbot.js"></script>
+    <script src="https://real-mate.vercel.app/js/chatbot.js"></script>
 </body>
+
 </html>
